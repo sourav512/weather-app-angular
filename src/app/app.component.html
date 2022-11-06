@@ -21,7 +21,7 @@
           <img src="../assets/lowTemp.png" alt="" srcset="">
           <span>min</span>
         </div>
-        <div class="info-block-value">{{weatherData.main.temp_min}}°C</div>
+        <div class="info-block-value">{{weatherData.main.temp_min | number:'1.0-0'}}°C</div>
       </div>
 
       <div class="info-block">
@@ -29,7 +29,7 @@
           <img style="width: 0.8em;" src="../assets/highTemp.png" alt="" srcset="">
           <span>max</span>
         </div>
-        <div class="info-block-value">{{weatherData.main.temp_max}}°C</div>
+        <div class="info-block-value">{{weatherData.main.temp_max | number:'1.0-0'}}°C</div>
       </div>
 
       <div class="info-block">
